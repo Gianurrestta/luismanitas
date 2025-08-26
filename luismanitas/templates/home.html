@@ -14,12 +14,19 @@
             </div>
         </div>
         <div class="cont_home">
-            <div class="cont_img">
-                <img class="img_home" src="{% static 'images/aseo01.png' %}" alt="Imagen de LuisManitas">;
-                <img class="img_home" src="{% static 'images/aseo02.png' %}" alt="Imagen de LuisManitas">;
-                <img class="img_home" src="{% static 'images/aseo03.png' %}" alt="Imagen de LuisManitas">;
-                <img class="img_home" src="{% static 'images/aseo04.png' %}" alt="Imagen de LuisManitas">;
+            <section class="cont_slider">                
+                <div class="cont_img">
+                    <img id="img_home01" src="{% static 'images/aseo01.png' %}" alt="Imagen de LuisManitas">;
+                    <img id="img_home02" src="{% static 'images/aseo02.png' %}" alt="Imagen de LuisManitas">;
+                    <img id="img_home03" src="{% static 'images/aseo03.png' %}" alt="Imagen de LuisManitas">;
+                    <img id="img_home04" src="{% static 'images/aseo04.png' %}" alt="Imagen de LuisManitas">;
+                </div>
+                <div class="img_slider">
+                    <a href="#img:home01"></a>
+                    <a href="#img:home02"></a>
+                    <a href="#img:home03"></a>
+                    <a href="#img:home04"></a>       
+                </div>    
             </div>
-        </div>
     </main>
 {% endblock %}
