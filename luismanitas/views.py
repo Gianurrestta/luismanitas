@@ -5,7 +5,6 @@ from django.template import loader
 def home(request): # pagina Home
     hometemp = loader.get_template('home.html')
     documento01 = hometemp.render()
-
     return HttpResponse(documento01)
 
 def contacto(request): # pagina contacto

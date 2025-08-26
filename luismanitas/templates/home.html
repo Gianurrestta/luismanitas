@@ -1,13 +1,25 @@
 {% extends 'base.html' %}
 {% load static %}
+
 {% block content %}
-<main>
-    <div class ="cont_home">
-        <h1>Bienvenidos a LuisManitas</h1>
-        <p>Tu solución confiable para reparaciones y mantenimiento del hogar.</p>
-    </div>
-    <div class="cont_home">
-        <img src="{% static 'images/aseo01.png' %}" alt="Imagen de LuisManitas">
-    </div>
-</main>
+    <main>
+        <div class="cont_home">
+            <div class="cont_pres">
+                <h1>Quien es LuisManitas?</h1>
+                <p class="desc">LuisManitas reconocido en el área de mantenimiento y restauración de propiedades por su compromiso, responsabilidad y alta calidad en cada proyecto. Es un especialista con visión integral del cuidado de inmuebles, capaz de abordar desde tareas preventivas de mantenimiento hasta intervenciones complejas de restauración, siempre con un enfoque práctico y eficiente.</p>
+                <p class="desc">Su experiencia se refleja en la capacidad para identificar necesidades específicas de cada propiedad, proponer soluciones duraderas y ejecutar los trabajos con precisión y esmero. La versatilidad es uno de sus mayores valores: combina habilidades técnicas en albañilería, pintura y fontanería con un gran sentido estético, lo que garantiza resultados que no solo cumplen con los requisitos funcionales, sino que también aportan valor al aspecto y conservación del inmueble.</p>
+                <p class="desc">Destaca además por su profesionalidad en la gestión del tiempo y los recursos, ofreciendo un servicio transparente y de confianza. Los clientes resaltan su trato cercano, la claridad en la comunicación y la capacidad de adaptarse a presupuestos y plazos.</p>
+                <p class="desc">En conclusión, LuisManitas es un profesional altamente recomendable para quienes buscan un servicio completo, fiable y de excelencia en el mantenimiento y restauración de propiedades.</p>
+
+            </div>
+        </div>
+        <div class="cont_home">
+            <div class="cont_img">
+                <img class="img_home" src="{% static 'images/aseo01.png' %}" alt="Imagen de LuisManitas">;
+                <img class="img_home" src="{% static 'images/aseo02.png' %}" alt="Imagen de LuisManitas">;
+                <img class="img_home" src="{% static 'images/aseo03.png' %}" alt="Imagen de LuisManitas">;
+                <img class="img_home" src="{% static 'images/aseo04.png' %}" alt="Imagen de LuisManitas">;
+            </div>
+        </div>
+    </main>
 {% endblock %}
