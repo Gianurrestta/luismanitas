@@ -5,7 +5,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 20em;
+    width: 100%;
     font-family: Arial, sans-serif;
 }
 header{
@@ -21,7 +21,7 @@ header{
     display: inline-block;
 }
 img.img_head{
-    height: 170px;
+    height: 150px;
     width: auto;
 }
 .redes_sociales{
@@ -30,7 +30,7 @@ img.img_head{
     height: 100px;
 }
 img.redes_sociales{
-    height: 60px;
+    height: 45px;
     width: auto;
     padding: 5px;
 }
@@ -43,97 +43,95 @@ nav{
     display: flex;
     width: auto;
     height: 60px;
-    background: rgb(102, 105, 253, 0.9);
+    background: rgba(102, 105, 253, 0.9);
     color: #ffffff;
     text-align: center;
     justify-content: space-around;
     margin: 10px;
 }
-button#llamada{
-    background-color: #000000;
+#llamada{
+    background-color: #ff3741;
     color: white;
-    font-size: 30px;
+    font-size: 22px;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
     margin-bottom: 10px;
     cursor: pointer;
     border-radius: 10px;
     text-decoration: none;
 }
-button#llamada:hover{
+#llamada:hover{
     background-color: #e67b7e;
     color:#000000
+}
+.contene_menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 .page{
     display: inline-block;
     color: white;
-    font-size: 30px;
+    font-size: 24px;
     text-decoration: none;
-    padding: 15px 100px;
+    padding: 15px 60px;
+}
+.page:hover{
+    max-height: 30px;
+    background-color: #5858fa;
+    color:#000000;
+    border-radius: 20px;
 } 
-
-/* en adelante es el css de Home */ 
-
-
-
 main{
     display: flex;
     background-color:  rgb(239, 222, 196, 0.5);
-    height: auto;
     width: auto;
     margin: 10px 10px 10px 10px;
-}
-.cont.home{
-    width: 50%;
-    text-align: center;
-    justify-content: center;
-    font-size: 25px;    
-    line-height: 1.5;
-}
-.cont.home p{
-    font-size: 35px;
-    justify-content: center;
-}
-/*.cont_home{
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 25px;
-}
-.cont_slider{
-    position: relative;
-    max-width: 650px;
-    height: auto;
-    margin: 0 auto;
-}
-.cont_img{
-    display: flex;
-    aspect-ratio: 9/6;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 1.5 3rem -0.75rem rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-}
-.cont_img img{
-    display: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-}
-.img_slider{
-    display: flex;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-.img_home{
-    display: flex;
+} 
+.cont_home{
+    display: inline-block;
+    text-align: justify;
     align-items: center;
-    border-radius: 30px;
-    width: 90%;
+    width: 100%;
+    padding: 10px 25px;
+}
+.titpres{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.desc{
+    color: #3b3b3b;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.cont_slider{
+    display: flex;
+    width: 100%;
     height: auto;
-}*/
+    margin: 10px 10px 10px 10px;
+   
+}
+#img_home01{
+    height: 370px;
+    width: auto;
+    margin: 50px 50px;
+    align-items: center;
+}
+footer{
+    background-color: rgba(102, 105, 253, 0.9);
+    display: flex;
+    width: auto;   
+    text-align: center;
+    justify-content: space-around;
+    margin: 10px 10px;
+}
+.footpres{
+    font-size: 12px;
+    font-weight: lighter;
+}
+

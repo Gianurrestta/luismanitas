@@ -22,8 +22,8 @@ from luismanitas.views import home, contacto, servicios
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
-    path('home/home', home),
-    path('home/contacto', contacto),
-    path('home/servicios', servicios),
+    path('home', home),
+    path('contacto', contacto),
+    path('servicios', servicios),
 ]
 
