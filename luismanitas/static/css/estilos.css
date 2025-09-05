@@ -43,7 +43,7 @@ nav{
     display: flex;
     width: auto;
     height: 60px;
-    background: rgba(102, 105, 253, 0.9);
+    background: rgba(8, 8, 8, 0.9);
     color: #ffffff;
     text-align: center;
     justify-content: space-around;
@@ -82,10 +82,13 @@ nav{
     color:#000000;
     border-radius: 20px;
 } 
+
+/* CSS de Homo */
+
 main{
     display: flex;
     background-color:  rgb(239, 222, 196, 0.5);
-    width: auto;
+    width: 100%;
     margin: 10px 10px 10px 10px;
 } 
 .cont_home{
@@ -108,19 +111,21 @@ main{
     line-height: 1.5;
     text-align: justify;
 }
-
-.cont_slider{
-    display: flex;
+.cont_home02{
+    display: inline-block;
     width: 100%;
     height: auto;
-    margin: 10px 10px 10px 10px;
-   
+    overflow: hidden;
 }
-#img_home01{
-    height: 370px;
-    width: auto;
-    margin: 50px 50px;
-    align-items: center;
+.cont_home02 ul{
+    display: flex;
+    width: 400%;
+    animation: cambio 20s infinite linear;    
+    list-style: none;  
+}
+.cont_home02 li{
+    display: inline-block;
+    width: 100%;
 }
 footer{
     background-color: rgba(102, 105, 253, 0.9);
