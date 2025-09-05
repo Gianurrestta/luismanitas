@@ -1,57 +1,65 @@
-/* CSS de la base en la pagina web Luis Manitas */
-
-body{
+/* Base Styles */
+body {
     background-image: url('../images/remodelacion.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    width: 100%;
+    box-sizing: border-box;  /* fixed: was width:border-box */
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-header{
+
+header {
     display: flex;
-    width: auto;   
-    text-align: center;
     justify-content: space-around;
-    margin: 10px 10px;
+    text-align: center;
+    margin: 10px;
 }
-.conte_red{
+
+.conte_red {
     width: 100%;
-    background: rgb(239, 222, 196, 0.5);
+    background: rgba(239, 222, 196, 0.5);
     display: inline-block;
 }
-img.img_head{
+
+img.img_head {
     height: 150px;
     width: auto;
 }
-.redes_sociales{
+
+.redes_sociales {
     display: inline-block;
     margin: 15px;
     height: 100px;
 }
-img.redes_sociales{
+
+img.redes_sociales {
     height: 45px;
     width: auto;
     padding: 5px;
 }
-.conec_tele{
+
+.conec_tele {
     display: inline-block;
     margin: 5px 15px;
     font-size: 25px;
 }
-nav{
+
+/* Navigation */
+nav {
     display: flex;
-    width: auto;
-    height: 60px;
-    background: rgba(8, 8, 8, 0.9);
-    color: #ffffff;
-    text-align: center;
     justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background: rgba(102, 105, 253, 0.8);
+    color: #fff;
     margin: 10px;
 }
-#llamada{
+
+#llamada {
     background-color: #ff3741;
-    color: white;
+    color: #fff;
     font-size: 22px;
     border: none;
     padding: 5px 20px;
@@ -60,47 +68,56 @@ nav{
     border-radius: 10px;
     text-decoration: none;
 }
-#llamada:hover{
+
+#llamada:hover {
     background-color: #e67b7e;
-    color:#000000
+    color: #000;
 }
-.contene_menu{
+
+.contene_menu {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
-.page{
-    display: inline-block;
-    color: white;
+
+.page {
+    color: #fff;
     font-size: 24px;
     text-decoration: none;
     padding: 15px 60px;
 }
-.page:hover{
-    max-height: 30px;
-    background-color: #5858fa;
-    color:#000000;
+
+.page:hover {
+    background-color: rgba(123, 123, 253, 0.5);
+    color: #000;
     border-radius: 20px;
-} 
-main{
-    display: flex;
-    background-color:  rgb(239, 222, 196, 0.5);
-    width: 100%;
-    margin: 10px 10px 10px 10px;
-} 
-.cont_home{
-    display: inline-block;
-    text-align: justify;
-    align-items: center;
-    width: 100%;
-    padding: 10px 25px;
 }
-.titpres{
+
+/* Main Content */
+main {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(239, 222, 196, 0.5);
+    margin: 10px;
+}
+
+.cont_home {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 35px;
+    width: 100%;
+}
+
+.titpres {
+    width: 100%;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
 }
-.desc{
+
+.desc {
     color: #3b3b3b;
     font-size: 24px;
     font-weight: bold;
@@ -108,32 +125,51 @@ main{
     line-height: 1.5;
     text-align: justify;
 }
-.cont_home02{
+
+/* ✅ Slider */
+.cont_home02 {
     display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.contenedor {
+    width: 100%;
+    margin-left: 60px;
+}
+.wrapper {  
+    overflow-inline: hidden;
+    display: flex;
+    width: 624px;
+    height: 416px;    
+}
+.wrapper img {
     width: 100%;
     height: auto;
-    overflow: hidden;
+    animation: slide 20s infinite;
 }
-.cont_home02 ul{
-    display: flex;
-    width: 400%;
-    animation: cambio 20s infinite linear;    
-    list-style: none;  
+
+/* Slider Animation */
+@keyframes slide {
+    0%, 20%   { transform: translateX(0); }
+    25%, 45%  { transform: translateX(-100%); }
+    50%, 70%  { transform: translateX(-200%); }
+    75%, 100% { transform: translateX(-300%); }
 }
-.cont_home02 li{
-    display: inline-block;
-    width: 100%;
-}
-footer{
+
+/* Footer */
+footer {
     background-color: rgba(102, 105, 253, 0.9);
     display: flex;
-    width: auto;   
-    text-align: center;
     justify-content: space-around;
-    margin: 10px 10px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
 }
-.footpres{
+
+.footpres {
     font-size: 12px;
     font-weight: lighter;
 }
-
