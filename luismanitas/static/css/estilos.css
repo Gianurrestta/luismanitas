@@ -180,5 +180,12 @@ footer {
 
 .footpres {
     font-size: 12px;
-    font-weight: lighter;
+}
+
+section {
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(239, 222, 196, 0.5);
+    margin: 10px;
+    width: box-sizing;
 }

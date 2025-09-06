@@ -1,5 +1,37 @@
 {% extends 'base.html' %}
+
 {% load static %}
+
 {% block content %}
-<h4>Esta es la parte de contacto</h4>
+<section>
+    <h1>Este debera ser el formulario de contacto</h1>
+    <br>
+    <form>
+        <div>
+            <label for="comp_name"></label>
+            <input type="text" id="comp_name" name="comp_name" placeholder="Carlo Alberto Garcia">
+        </div>
+        <br>
+        <div>
+            <label for="tel_num"></label>
+            <input type="text" id="tel_num" name="Tel_num" placeholder="915 000 555">
+        </div>
+        <br>
+        <div>
+            <label for="comp_name"></label>
+            <input type="text" id="comp_name" name="comp_name" placeholder="Carlo Alberto Garcia">
+        </div>
+        <br>
+        <div>
+            <label for="problem"></label>
+            <input type="text" id="problem" name="problem" placeholder="Nesecito remodelar toda la casa y necesito una persona confiable que pueda con la descripcion del proyecto">
+        </div>
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+        
+    </form>
+
+</section>
 {% endblock %}
