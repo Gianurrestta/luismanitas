@@ -1,10 +1,11 @@
-/* Base Styles */
+/* ✅ Base Styles */
+
 body {
     background-image: url('../images/remodelacion.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    box-sizing: border-box;  /* fixed: was width:border-box */
+    box-sizing: border-box;  
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -24,7 +25,7 @@ header {
 }
 
 img.img_head {
-    height: 150px;
+    height: 130px;
     width: auto;
 }
 
@@ -37,7 +38,7 @@ img.img_head {
 img.redes_sociales {
     height: 45px;
     width: auto;
-    padding: 5px;
+    padding: 0px;
 }
 
 .conec_tele {
@@ -46,12 +47,13 @@ img.redes_sociales {
     font-size: 25px;
 }
 
-/* Navigation */
+/* ✅ Navigation */
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 60px;
+    height: auto;
     background: rgba(102, 105, 253, 0.8);
     color: #fff;
     margin: 10px;
@@ -60,9 +62,9 @@ nav {
 #llamada {
     background-color: #ff3741;
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     border: none;
-    padding: 5px 20px;
+    padding: 5px 40px;
     margin-bottom: 10px;
     cursor: pointer;
     border-radius: 10px;
@@ -72,6 +74,7 @@ nav {
 #llamada:hover {
     background-color: #e67b7e;
     color: #000;
+    box-shadow: #000 0px 0px 10px;
 }
 
 .contene_menu {
@@ -93,13 +96,15 @@ nav {
     border-radius: 20px;
 }
 
-/* Main Content */
+/* ✅ Main Content */
+
 main {
     display: flex;
     justify-items: center;
     align-items: center;
     background-color: rgba(239, 222, 196, 0.5);
     margin: 10px;
+    width: box-sizing;
 }
 
 .cont_home {
@@ -107,11 +112,9 @@ main {
     justify-content: center;
     align-items: center;
     padding: 10px 35px;
-    width: 100%;
 }
 
 .titpres {
-    width: 100%;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -127,31 +130,36 @@ main {
 }
 
 /* ✅ Slider */
+
 .cont_home02 {
     display: inline-block;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin: 10px;
 }
 
 .contenedor {
     width: 100%;
-    margin-left: 60px;
+    margin: 30px;
 }
+
 .wrapper {  
     overflow-inline: hidden;
+    border: #fff 15px solid;
+    box-shadow: #000 0px 0px 15px;
     display: flex;
     width: 624px;
     height: 416px;    
 }
+
 .wrapper img {
     width: 100%;
     height: auto;
     animation: slide 20s infinite;
 }
 
-/* Slider Animation */
+/* ✅ Slider Animation */
+
 @keyframes slide {
     0%, 20%   { transform: translateX(0); }
     25%, 45%  { transform: translateX(-100%); }
@@ -159,7 +167,8 @@ main {
     75%, 100% { transform: translateX(-300%); }
 }
 
-/* Footer */
+/* ✅ Footer */
+
 footer {
     background-color: rgba(102, 105, 253, 0.9);
     display: flex;
@@ -168,7 +177,7 @@ footer {
     margin: 10px;
     padding: 10px;
 }
-/* fixed: was height: 60px; */
+
 .footpres {
     font-size: 12px;
     font-weight: lighter;
