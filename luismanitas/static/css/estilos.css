@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    box-sizing: border-box;  
+    box-sizing: 100%;  
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -13,27 +13,33 @@ body {
 
 header {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     text-align: center;
     margin: 10px;
 }
 
 .conte_red {
-    width: 100%;
-    background: rgba(239, 222, 196, 0,5);
-    display: inline-block;
+    justify-content: space-evenly;
+    width: 50%;
+    background: rgba(239, 222, 196, 0.75);
 }
-
 img.img_head {
-    height: 130px;
+    max-height: 130px;
     width: auto;
+    flex-wrap: wrap;
 }
-
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .redes_sociales {
-    display: inline-block;
     margin: 15px;
     height: 100px;
 }
+
+
+
 
 img.redes_sociales {
     height: 45px;
@@ -54,7 +60,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: auto;
-    background: rgba(102, 105, 253, 0);
+    background-color: rgba(123, 123, 253, 0.75);
     color: #fff;
     margin: 10px;
 }
@@ -91,7 +97,7 @@ nav {
 }
 
 .page:hover {
-    background-color: rgba(123, 123, 253, 0.5);
+    background-color: rgba(123, 123, 253, 0.75);
     color: #000;
     border-radius: 20px;
 }
@@ -102,7 +108,7 @@ main {
     display: flex;
     justify-items: center;
     align-items: center;
-    background-color: rgba(239, 222, 196, 0.5);
+    background-color: rgba(239, 222, 196, 0.75);
     margin: 10px;
     width: box-sizing;
 }
@@ -153,7 +159,7 @@ main {
 }
 
 .wrapper img {
-    width: 100%;
+    width: 400%;
     height: auto;
     animation: slide 20s infinite;
 }
@@ -170,7 +176,7 @@ main {
 /* ✅ Footer */
 
 footer {
-    background-color: rgba(102, 105, 253, 0.9);
+    background-color: rgba(102, 105, 253, 0.75);
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -185,7 +191,7 @@ footer {
 section {
     justify-items: center;
     align-items: center;
-    background-color: rgba(239, 222, 196, 0.5);
+    background-color: rgba(239, 222, 196, 0.75);
     margin: 10px;
     width: box-sizing;
 }
