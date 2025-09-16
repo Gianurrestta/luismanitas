@@ -14,18 +14,24 @@ body {
 header {
     display: flex;
     flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
     text-align: center;
     max-width: 100%;
     margin: 10px;
-    background: #fff;
+    background: rgba(239, 222, 196, 0.85);
 }
 
-.conte_red {
-    width: 100%;
+header .conte_red {
+    width: auto;
+    flex-grow: 1;
+    flex-basis: 50%;
 }
-.conte_red01 {
-    display: flex;
-    width: 100%;
+header .conte_red01 {
+    display: inline-block;
+    width: auto;
+    flex-grow: 1;
+    flex-basis: 50%;
 }
 img.img_head {
     max-height: 130px;
@@ -59,7 +65,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: auto;
-    background-color: rgba(123, 123, 253, 0.75);
+    background-color: rgba(123, 123, 253, 0.85);
     color: #fff;
     margin: 10px;
 }
@@ -96,7 +102,7 @@ nav {
 }
 
 .page:hover {
-    background-color: rgba(123, 123, 253, 0.75);
+    background-color: rgba(123, 123, 253, 0.50);
     color: #000;
     border-radius: 20px;
 }
@@ -105,9 +111,10 @@ nav {
 
 main {
     display: flex;
+    flex-wrap: wrap;
     justify-items: center;
     align-items: center;
-    background-color: rgba(239, 222, 196, 0.75);
+    background-color: rgba(239, 222, 196, 0.85);
     margin: 10px;
     width: box-sizing;
 }
@@ -175,7 +182,7 @@ main {
 /* ✅ Footer */
 
 footer {
-    background-color: rgba(102, 105, 253, 0.75);
+    background-color: rgba(123, 123, 253, 0.85);
     display: flex;
     justify-content: space-around;
     text-align: center;
