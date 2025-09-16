@@ -16,12 +16,11 @@ header {
     flex-wrap: wrap;
     text-align: center;
     margin: 10px;
-    background: rgba(239, 222, 196, 0.75)
+    background: rgba(253, 153, 2, 0.85)
 }
 
 .conte_red {
     width: 50%;
-    ;
 }
 img.img_head {
     max-height: 130px;
