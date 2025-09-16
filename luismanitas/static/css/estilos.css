@@ -15,17 +15,21 @@ header {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    max-width: 100%;
     margin: 10px;
-    background: rgba(253, 153, 2, 0.85)
+    background: #fff;
 }
 
 .conte_red {
-    width: 50%;
+    width: 100%;
+}
+.conte_red01 {
+    display: flex;
+    width: 100%;
 }
 img.img_head {
     max-height: 130px;
     width: auto;
-    flex-wrap: wrap;
 }
 .redes{
     display: flex;
@@ -36,10 +40,6 @@ img.img_head {
     margin: 15px;
     height: 100px;
 }
-
-
-
-
 img.redes_sociales {
     height: 45px;
     width: auto;
