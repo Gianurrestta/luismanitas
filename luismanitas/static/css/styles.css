@@ -20,6 +20,7 @@ header {
     max-width: 100%;
     margin: 10px;
     background: rgba(239, 222, 196, 0.85);
+    box-shadow: inset #000 0px 0px 15px;
 }
 
 header .conte_red {
@@ -51,6 +52,11 @@ img.redes_sociales {
     width: auto;
     padding: 0px;
 }
+img.redes_sociales:hover {
+    transform: scale(1.4);
+    transition: all 0.5s ease-in-out;
+    box-shadow: #000 0px 0px 15px;
+}   
 
 .conec_tele {
     display: inline-block;
@@ -96,6 +102,7 @@ nav {
 
 .page {
     color: #fff;
+    text-shadow: #000 2px 2px 15px;
     width: 15%;
     text-align: center;
     justify-content: center;
@@ -195,6 +202,7 @@ footer {
 
 section {
     justify-items: center;
+    height: 450px;
     align-items: center;
     background-color: rgba(239, 222, 196, 0.75);
     margin: 10px;
@@ -202,8 +210,10 @@ section {
 }
 form {
     display: flex;
+    flex-wrap: wrap;
     text-align: start;
     padding: 20px;
+    gap: 20px;
 }
 label {
     width: 250px;
@@ -213,14 +223,14 @@ label {
     font-size: 30px;
     width: 100%;
     font-weight: bold;
-    text-align: center;
+    text-align: start;
     margin-bottom: 15px;
 }
 #tel_num {
     font-size: 30px;
     width: 100%;
     font-weight: bold;
-    text-align: center;
+    text-align: start;
     margin-bottom: 15px;
 }   
 input[type="text"] {
