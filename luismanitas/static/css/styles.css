@@ -110,8 +110,6 @@ nav {
 /* ✅ Main Content */
 
 main {
-    display: flex;
-    flex-wrap: wrap;
     justify-items: center;
     align-items: center;
     background-color: rgba(239, 222, 196, 0.85);
@@ -119,59 +117,51 @@ main {
     width: box-sizing;
 }
 
-.cont_home {
-    justify-content: center;
-    align-items: center;
-    padding: 10px 35px;
-}
-
-.titpres {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
+main .cont_home {
+    display: flex;
+    width: 100%;
 }
 
 .desc {
     color: #3b3b3b;
     font-size: 24px;
     font-weight: bold;
+    margin: 0px 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.desc p {
+    font-size: 30px;
+    font-weight: normal;
     margin-top: 10px;
     line-height: 1.5;
     text-align: justify;
 }
-
-/* ✅ Slider */
-
-.cont_home02 {
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+.desc h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.contenedor {
-    width: 100%;
-    margin: 30px;
-}
-
-.wrapper {    
+.wrapper /* ✅ Slider */{    
     float: right;  
     overflow-inline: hidden;
     border: #fff 15px solid;
     box-shadow: #000 0px 0px 15px;
     display: flex;
     width: 624px;
-    height: 416px;    
+    height: 410px;
+    margin: 10px 10px;    
 }
 
 .wrapper img {
-    width: 400%;
+    width: 200%;
     height: auto;
     animation: slide 20s infinite;
 }
 
-/* ✅ Slider Animation */
-
-@keyframes slide {
+@keyframes slide /* ✅ Slider Animation */{
     0%, 20%   { transform: translateX(0); }
     25%, 45%  { transform: translateX(-100%); }
     50%, 70%  { transform: translateX(-200%); }
@@ -182,6 +172,7 @@ main {
 
 footer {
     background-color: rgba(123, 123, 253, 0.85);
+    position: relative;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -199,4 +190,13 @@ section {
     background-color: rgba(239, 222, 196, 0.75);
     margin: 10px;
     width: box-sizing;
+}
+@media (max-width: 1200px) {
+
+    
+    .cont_home{
+        display: inline;
+        align-items: center;    
+}
+
 }

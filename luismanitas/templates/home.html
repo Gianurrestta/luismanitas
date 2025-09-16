@@ -2,28 +2,27 @@
 {% load static %}
 
 {% block content %}
-<body>  
 
-<main>
-        <div class="cont_home">
-            <p class="titpres">Bienvenidos a LuisManitas</p>
+<main>        
 
-            <p class="desc">LuisManitas es un especialista en mantenimiento y restauración de propiedades, reconocido por su compromiso, responsabilidad y calidad. Con una visión integral, combina experiencia técnica en albañilería, pintura y fontanería con un sentido estético que realza el valor de cada inmueble. Destaca por su capacidad de ofrecer soluciones duraderas, gestionar eficazmente tiempo y recursos, y mantener una comunicación clara y cercana con los clientes. Su servicio es confiable, transparente y adaptable a diferentes presupuestos y plazos.</p>
+    </div class="cont_home">
+
+        <div class="wrapper">
+            <img src="{% static 'images/aseo01.png' %}" alt="Imagen de LuisManitas">
+            <img src="{% static 'images/aseo02.png' %}" alt="Imagen de LuisManitas">
+            <img src="{% static 'images/aseo03.png' %}" alt="Imagen de LuisManitas">
+            <img src="{% static 'images/aseo04.png' %}" alt="Imagen de LuisManitas"> 
         </div>
+        
+        <div class="desc">
 
-        </div class="cont_home02">
-            <div class="contenedor">
-                
-                <div class="wrapper">
-                    <img src="{% static 'images/aseo01.png' %}" alt="Imagen de LuisManitas">
-                    <img src="{% static 'images/aseo02.png' %}" alt="Imagen de LuisManitas">
-                    <img src="{% static 'images/aseo03.png' %}" alt="Imagen de LuisManitas">
-                    <img src="{% static 'images/aseo04.png' %}" alt="Imagen de LuisManitas"> 
-                </div>
-            </div>
-    </main>
+            <h2>Bienvenidos a LuisManitas</h2>
+            <p class="desc">LuisManitas es un especialista en mantenimiento y restauración de propiedades, reconocido por su compromiso, responsabilidad y calidad. Con una visión integral, combina experiencia técnica en albañilería, pintura y fontanería con un sentido estético que realza el valor de cada inmueble. Destaca por su capacidad de ofrecer soluciones duraderas, gestionar eficazmente tiempo y recursos, y mantener una comunicación clara y cercana con los clientes. Su servicio es confiable, transparente y adaptable a diferentes presupuestos y plazos.</p>
+
+        </div>
+    </div>
+</main>
     
-</body> 
            
 {% endblock %}
     
