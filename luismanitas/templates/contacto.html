@@ -6,22 +6,29 @@
 <section>
     <h1>Este debera ser el formulario de contacto</h1>
     <br>
-    <form>
+    <form action="db.sqlite3" method="POST">
         <div>
-            <label id="comp_name"></label>
-            <input type="text" id="comp_name" name="comp_name" placeholder="Carlos Alberto Garcia">
+            <label for="comp_name">Nombre Completo:</label>
+            <input type="text" id="comp_name" name="comp_name" placeholder="Nombre completo" required>
         </div>
-        <br>
         <div>
-            <label id="tel_num"></label>
-            <input type="text" id="tel_num" name="Tel_num" placeholder="915 000 555">
+            <label for="tel_num">Numero de Telefono:</label>
+            <input type="tel" id="tel_num" name="Tel_num" placeholder="915 000 555" required>
         </div>
-        <br>
         <div>
-            <label for="comp_name"></label>
-            <input type="text" id="comp_name" name="comp_name" placeholder="Carlos Alberto Garcia">
+            <label for="email">Correo Electronico:</label>
+            <input type="email" id="email" name="email" placeholder="antonio@gmail.com">
         </div>
-        <br>
+        <div>
+            <label for="interes">Interesado en:</label>
+            <select> 
+                <option value="baño">Remodelacion de Baño</option>
+                <option value="cocina">Remodelacion de Cocina</option>
+                <option value="reparacion">Reparacion</option>
+                <option value="integral">Remodelacion Integral</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
         <div>
             <label for="problem"></label>
             <input type="text" id="problem" name="problem" placeholder="Nesecito remodelar toda la casa y necesito una persona confiable que pueda con la descripcion del proyecto">
@@ -29,6 +36,8 @@
         <br>
         <div>
             <input type="reset">
+            <br>
+            <input type="submit">
         </div>
         
     </form>
