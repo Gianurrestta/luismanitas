@@ -129,7 +129,7 @@ main {
     width: box-sizing;
 }
 
-main .cont_home {
+.cont_home {
     width: box-sizing;
 }
 
@@ -178,6 +178,12 @@ main .cont_home {
     25%, 45%  { transform: translateX(-100%); }
     50%, 70%  { transform: translateX(-200%); }
     75%, 100% { transform: translateX(-300%); }
+}
+.cont_serv {
+    display: inline-block;
+    width: box-sizing;
+    height: auto;
+    margin: 10px;
 }
 
 .wrapper02 /* ✅ Slider02 */{    
