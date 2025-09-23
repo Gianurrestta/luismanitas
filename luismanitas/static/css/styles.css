@@ -180,10 +180,17 @@ main {
     75%, 100% { transform: translateX(-300%); }
 }
 .cont_serv {
-    display: inline-block;
+    display : inline-block;
     width: box-sizing;
     height: auto;
     margin: 10px;
+}
+.deser {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 .wrapper02 /* ✅ Slider02 */{    
