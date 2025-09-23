@@ -180,6 +180,31 @@ main .cont_home {
     75%, 100% { transform: translateX(-300%); }
 }
 
+.wrapper02 /* ✅ Slider02 */{    
+    float: right;  
+    overflow-inline: hidden;
+    border: #fff 10px solid;
+    box-shadow: #000 0px 0px 15px;
+    display: flex;
+    width: 431px;
+    height: 328px;
+    margin: 0px 25px; 
+    margin-top: 60px;   
+}
+
+.wrapper02 img {
+    width: 200%;
+    height: auto;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide /* ✅ Slider Animation */{
+    0%, 20%   { transform: translateX(0); }
+    25%, 45%  { transform: translateX(-100%); }
+    50%, 70%  { transform: translateX(-200%); }
+    75%, 100% { transform: translateX(-300%); }
+}
+
 /* ✅ Footer */
 
 footer {
