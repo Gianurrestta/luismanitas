@@ -330,6 +330,7 @@ select.option {
 
 .preserv {
     font-size: 30px;
+    color:#ff3741;
     width: box-sizing;
     font-weight: bold;
     margin-top: 15px;
@@ -339,7 +340,7 @@ select.option {
 #services{
     display: flex;
     height: auto;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     margin-right: 15px;
