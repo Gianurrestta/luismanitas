@@ -321,18 +321,17 @@ select.option {
 
 /* ✅ Servicios Page */
 
-.servicios {
+/*.servicios {
     display: inline-block;
     width: box-sizing;
     height: 600px;
     margin: 10px;
-}
-
+}*/
 .preserv {
     font-size: 30px;
-    color:#ff3741;
-    width: box-sizing;
+    color: red;
     font-weight: bold;
+    text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -344,6 +343,16 @@ select.option {
     justify-content: center;
     text-align: center;
     margin-right: 15px;
+}
+.deser {
+    font-size: 24px;
+    width: 400px;
+    font-weight: normal;
+    margin: 10px 40px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 
