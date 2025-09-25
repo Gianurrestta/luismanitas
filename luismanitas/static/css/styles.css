@@ -77,7 +77,7 @@ nav {
 }
 
 #llamada {
-    background-color: #ff3741;
+    background-color: #5c37ff;
     color: #fff;
     font-size: 20px;
     border: none;
@@ -327,7 +327,7 @@ select.option {
     height: 600px;
     margin: 10px;
 }*/
-.preserv {
+p .preserv{
     font-size: 30px;
     color: red;
     font-weight: bold;
